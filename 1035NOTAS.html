@@ -1,0 +1,24 @@
+<hr><br>
+<meta charset = 'UTF-8'>
+<script>
+//Nota 1: 'maneira lista' colchete na variavel
+//Nota 2: split é a separação no espaço da lista.
+//Nota 3: A%2===0    é infomrando se o A é par!
+//Nota 4: ===  -> comparando o número e sua natureza, se é o mesmo caractere!
+
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto){return lines.shift();};
+var [A,B,C,D] = prompt('Informe quatro valores:').split(' ')
+A = parseInt(A);
+B = parseInt(B);
+C = parseInt(C);
+D = parseInt(D);
+
+if(B>C && D>A && C+D>A+B && C>0 && D>0 && A%2===0) {
+    console.log('Valores aceitos');
+} else {
+    console.log('Valores nao aceitos');
+}
+</script>
