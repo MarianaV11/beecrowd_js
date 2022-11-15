@@ -2,7 +2,7 @@ var prompt = function(texto){return lines.shift();};
 var n = parseInt(prompt('Informe a quantidade de termos: '));
 
 for (var i = 0; i < n; i++) {
-    var x = parseInt(prompt('Informe os valores a serem classificados<3'));
+    var x = parseInt(prompt('Informe os valores a serem classificados'));
 
     var y = 1;
     while (y < x - 1) {
