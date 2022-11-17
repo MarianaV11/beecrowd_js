@@ -1,4 +1,4 @@
-var n = 576
+var n = parseInt(prompt())
 
 if (n/100 != 0) {
     var resto1 = n % 100;
