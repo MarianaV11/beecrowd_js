@@ -1,9 +1,11 @@
 var prompt = function(texto){return lines.shift();};
-var A = Array(100);
+var A = [];
+var p = 0;
 
-for (var i = 0; i < A.length; i++) {
-    A[i] = parseFloat(prompt());
-    if (A[i] <= 10) {
-        console.log('A['+i+'] = '+A[i]);
+while (p < 100) {
+    A[p] = parseFloat(prompt());
+    if (A[p] <= 10) {
+        console.log('A['+p+'] = '+(A[p]).toFixed(1));
     }
+    p++;
 }
