@@ -1,4 +1,3 @@
-# beecrowd_js
 This repository is some exercises resolved in JavaScript, made in my first semester in college.
 
 # Objective
